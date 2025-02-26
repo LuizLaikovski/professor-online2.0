@@ -51,7 +51,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student [name=" + name + ", CPF=" + CPF + ", dateOfBirth=" + dateOfBirth + ", registration="
-                + registration + "]";
+        return "Nome = " + name + ", CPF = " + CPF + ", Data de Nascimento = " + dateOfBirth + ", Matricula = "+ registration;
     }
 }
