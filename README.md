@@ -32,8 +32,8 @@ Atribui uma nota para todos os alunos da turma.
 Atribui uma presença, falta ou fj aos alunos da turma na data informada.
 
 ## Participantes e suas contribuições:
-Luiz: Prototipagem e Teste
-Eduardo: Modelagem e criação do BD
-Stephany: Design
-Julia: Design
+Luiz: Prototipagem e Teste\
+Eduardo: Modelagem e criação do BD\
+Stephany: Design\
+Julia: Design\
 Isabella: Documentação e Slides
