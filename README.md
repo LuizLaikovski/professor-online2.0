@@ -17,6 +17,9 @@ Este é um projeto pensado em como melhorar o site do [Professor Online](https:/
 ### Cadastrar Alunos:
 Adiciona um aluno a uma turma de uma escola. Pedindo seu nome, CPF(pk) data de nascimento e matrícula(unique).
 
+### Atualizar o cadastro dos estudantes:
+Edita as informações do estudante ou move ele de turma ou escola.
+
 ### Remover Aluno:
 Remove o cadastro do aluno.
 
