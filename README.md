@@ -14,4 +14,16 @@ Este é um projeto pensado em como melhorar o site do [Professor Online](https:/
 
 ## Funções de ADMIN
 
-### CadastrarAlunos: Adiciona um aluno a uma turma de uma escola. Pedindo seu nome, CPF(pk) data de nascimento e matrícula(unique).
+### Cadastrar Alunos:
+Adiciona um aluno a uma turma de uma escola. Pedindo seu nome, CPF(pk) data de nascimento e matrícula(unique).
+
+### Remover Aluno:
+Remove o cadastro do aluno.
+
+## Funções de USER:
+
+### Atrinuir Avaliações: 
+Atribui uma nota para todos os alunos da turma.
+
+### Aulas:
+Atribui uma presença, falta ou fj aos alunos da turma na data informada.
