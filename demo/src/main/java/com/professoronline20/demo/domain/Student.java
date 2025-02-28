@@ -1,20 +1,20 @@
 package com.professoronline20.demo.domain;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class Student {
     private String name;
-    private int CPF;
+    private String CPF;
     private String dateOfBirth;
-    private int registration;
+    private Integer registration;
     
 
-    public Student(String name, int cPF, int registration, String sdf) {
+    public Student(String name, String cPF, Integer registration, String sdf) {
         this.name = name;
         this.CPF = cPF;
         this.dateOfBirth = sdf;
-        this.registration = registration;
+        if (registration == null) {
+            this.registration = 1;
+        }
     }
 
     public String getName() {
@@ -25,11 +25,11 @@ public class Student {
         this.name = name;
     }
 
-    public int getCPF() {
+    public String getCPF() {
         return CPF;
     }
 
-    public void setCPF(int cPF) {
+    public void setCPF(String cPF) {
         CPF = cPF;
     }
 
@@ -41,16 +41,16 @@ public class Student {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public int getRegistration() {
+    public Integer getRegistration() {
         return registration;
     }
 
-    public void setRegistration(int registration) {
+    public void setRegistration(Integer registration) {
         this.registration = registration;
     }
 
     @Override
     public String toString() {
-        return "Nome = " + name + ", CPF = " + CPF + ", Data de Nascimento = " + dateOfBirth + ", Matricula = "+ registration;
+        return "Nome = " + this.name + ", CPF = " + this.CPF + ", Data de Nascimento = " + this.dateOfBirth + ", Matricula = "+ this.registration;
     }
 }

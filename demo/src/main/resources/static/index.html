@@ -14,7 +14,10 @@
         <input type="date" id="dateOfBirth" name="dateOfBirth" required>
         <br>
         <label for="CPF">CPF: </label>
-        <input type="number" name="CPF" id="CPF" required>
+        <input type="text" name="CPF" id="CPF" required>
+        <br>
+        <label for="registration">Matricula</label>
+        <input type="number" name="registration" id="registration" required>
         <br>
         <button type="submit">Enviar</button>
     </form>
@@ -28,24 +31,26 @@
 
             // Captura os dados do formulário
             const formData = {
-                nome: document.getElementById("nome").value,
-                email: document.getElementById("email").value
+                nome: document.getElementById("name").value,
+                dateOfB: document.getElementById("dateOfBirth").value,
+                cpf: document.getElementById("CPF").value
             };
 
             // Envia os dados para o backend usando Fetch API
             fetch("/submit", {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json" // Define o Content-Type como JSON
                 },
-                body: JSON.stringify(formData)
+                body: JSON.stringify(formData) // Converte os dados para JSON
             })
             .then(response => response.json()) // Converte a resposta para JSON
             .then(data => {
                 // Exibe a resposta do servidor no frontend
                 document.getElementById("response").innerHTML = `
                     <p>Nome: ${data.nome}</p>
-                    <p>Email: ${data.email}</p>
+                    <p>Data de Nascimento: ${data.dateOfB}</p>
+                    <p>CPF: ${data.cpf}</p>
                 `;
             })
             .catch(error => {
