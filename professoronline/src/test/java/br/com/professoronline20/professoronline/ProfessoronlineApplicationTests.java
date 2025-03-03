@@ -1,10 +1,10 @@
-package com.professoronline20.demo;
+package br.com.professoronline20.professoronline;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class ProfessoronlineApplicationTests {
 
 	@Test
 	void contextLoads() {
