@@ -14,7 +14,8 @@ public class StudentService {
     @Autowired
     private StudentRepositorio studentRepositorio;
 
-    private ResponseStudentModel responseStudent = new ResponseStudentModel("TESTE");
+    @Autowired
+    private ResponseStudentModel responseStudent;
 
     // MÉTODO PARA LISTAR OS ALUNOS DA TABELA
     public Iterable<StudentModel> listar() {
