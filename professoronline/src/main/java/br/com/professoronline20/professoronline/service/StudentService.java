@@ -11,8 +11,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class StudentService {
 
-    @Autowired
-    private StudentRepositorio studentRepositorio;
+    //@Autowired
+    //private StudentRepositorio studentRepositorio;
 
     @Autowired
     private ResponseStudentModel responseStudent;
